@@ -1,0 +1,34 @@
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    p {
+        width: inherit;
+        object-fit: contain;
+        font-family: 'Merriweather', serif;
+    }
+    img{
+        width: -webkit-fill-available;
+    }
+    .page {
+        margin: 0% 25% 0%;
+        display: flex;
+        flex-direction: column;
+        align-content: center
+    }
+</style>
+
+<body>
+    <div class="page">
+        {{.Body}}
+    <footer>
+        <a href="/view/{{.Next}}">next</a>
+        <a href="/view/{{.Previous}}">prev</a>
+    </footer>
+    </div>
+</body>
